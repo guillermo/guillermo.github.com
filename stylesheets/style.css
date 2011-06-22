@@ -1,0 +1,153 @@
+* {
+  font-family: 'Josefin Sans', arial, serif;
+  line-height: 16px;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+  color: #1a2423;
+  font-weight: 300; }
+
+a {
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out; }
+
+html, body {
+  background: url("../images/bg.png"), #ebe3af; }
+
+h1 {
+  font-family: 'The Girl Next Door', arial, serif; }
+
+header {
+  margin: 0 auto;
+  text-align: center;
+  display: block;
+  padding-bottom: 32px; }
+  header h1 {
+    padding-top: 8px;
+    padding-left: 12.5%;
+    padding-right: 12.5%;
+    font-size: 56px;
+    line-height: 56px;
+    margin-top: 32px; }
+  header h2 {
+    font-size: 16px;
+    line-height: 16px;
+    color: #a99951; }
+
+section {
+  display: block;
+  margin: 0 auto; }
+  section.center {
+    max-width: 480px;
+    padding: 16px 80px;
+    position: relative;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(169, 153, 81, 0.8)), color-stop(1, rgba(235, 227, 175, 0)));
+    text-align: center; }
+    section.center h1 {
+      text-align: center;
+      font-size: 48px;
+      line-height: 48px; }
+    section.center p {
+      text-align: justify;
+      font-size: 16px;
+      margin-bottom: 16px;
+      font-weight: 500;
+      text-shadow: #ebe3af 0.5px 0.5px 1px; }
+      section.center p em {
+        font-weight: normal; }
+      section.center p strong a, section.center p strong {
+        font-weight: 700; }
+      section.center p a:active, section.center p a:focus {
+        background: #1a2423;
+        color: #ebe3af;
+        outline: 0;
+        text-decoration: none;
+        text-shadow: none; }
+      section.center p a:hover {
+        text-decoration: none; }
+    section.center img {
+      text-align: center;
+      display: block; }
+    section.center h2 {
+      text-align: center;
+      font-size: 32px;
+      line-height: 32px; }
+  section.wide {
+    background: url(images/bg.png), #1a2423;
+    width: 100%;
+    padding: 32px 0; }
+    section.wide a {
+      color: #ebe3af; }
+    section.wide > ul {
+      margin: 0 auto;
+      list-style: none;
+      text-align: center; }
+      section.wide > ul li {
+        width: 320px;
+        vertical-align: top;
+        display: inline-block;
+        padding: 0 10px; }
+        section.wide > ul li h1 {
+          text-align: center;
+          font-weight: 300;
+          margin-bottom: 32px; }
+        section.wide > ul li h1 > a {
+          font-size: 40px;
+          line-height: 48px;
+          color: #7d762b;
+          text-decoration: none; }
+        section.wide > ul li ul li {
+          margin-bottom: 8px; }
+        section.wide > ul li ul, section.wide > ul li ul li, section.wide > ul li ul li a {
+          text-align: left;
+          font-size: 14px;
+          text-decoration: none;
+          color: #a19a70; }
+  section.list {
+    background: url(images/bg.png), #1a2423;
+    max-width: 100%;
+    padding: 32px 0 0;
+    text-align: center; }
+    section.list > ul {
+      max-width: 1040px;
+      list-style: none;
+      display: inline-block; }
+      section.list > ul li {
+        display: inline-block;
+        width: 160px;
+        text-align: center; }
+      section.list > ul a {
+        text-decoration: none;
+        color: #7d762b; }
+      section.list > ul a:hover {
+        color: #ebe3af; }
+
+em {
+  font-style: italic; }
+
+strong {
+  font-weight: 700; }
+
+footer {
+  background: url(images/bg.png), #1a2423;
+  max-width: 100%;
+  padding: 32px 0 0;
+  text-align: center;
+  color: #ebe3af; }
+  footer p {
+    padding: 32px 0; }
+  footer a, footer p {
+    color: #ebe3af;
+    text-decoration: none; }
+  footer a:hover {
+    color: #ebe3af; }
+
+@media (max-width:640px) {
+  section.center {
+    padding: 16px 12.5%;
+    width: inherit;
+    max-width: inherit; }
+    section.center img {
+      width: 100%; } }
