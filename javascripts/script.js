@@ -1,5 +1,6 @@
 (function() {
   var GET, add_link, clear_links, find, save, tumblr, twitter;
+  var __bind = function(fn, me){ return function(){ return fn.apply(me, arguments); }; };
   GET = function(url, fn) {
     var char, data, jsonp_url, name, script, _ref;
         if ((_ref = window.jsonp_requests) != null) {
@@ -9,10 +10,10 @@
     };
     name = "jsonp_request_" + window.jsonp_requests++;
     this.self = this;
-    window[name] = function(data) {
-      debugger;      save(url, data);
+    window[name] = __bind(function(data) {
+      save(url, data);
       return fn(data);
-    };
+    }, this);
     data = find(url);
     if (data != null) {
       fn(data);
